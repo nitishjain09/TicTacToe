@@ -1,3 +1,7 @@
+h1{
+    margin: 0px 0px;
+}
+
 main{
     display: grid;
     grid-template-columns: 175px 175px 175px;
@@ -5,6 +9,6 @@ main{
 }
 
 app-square {
-    border: 1px solid gray;
+    border: 0.5px solid rgb(192, 192, 192);
     height: 175px;
 }

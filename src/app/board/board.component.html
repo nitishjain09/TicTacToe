@@ -1,7 +1,12 @@
 <h1>Current Player: {{ player }}</h1>
 
-<button (click)="newGame()">Start New Game</button>
+<button nbButton outline status="danger" (click)="newGame()">Start New Game</button>
 <br><br>
+
+<h2 *ngIf="tie">
+    Match tied! Please start a new game.
+</h2>
+
 <h2 *ngIf="winner != null">
     Player {{ winner }} won the game!
 </h2>
